@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  cursor: pointer;
+}
+body {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.divideintwo {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.firsthalf {
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/imagesandbackground/imagesandicons/loginbackgroud.jpg");
+}
+#hovering:hover {
+  background-color: rgb(228, 65, 65);
+  color: whitesmoke;
+}
+.secondhalf {
+  width: 35vw;
+  height: 100vh;
+  background: url("/imagesandbackground/imagesandicons/Polygon\ Luminary.svg") no-repeat center
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secondhalf h2 {
+  font-size: 2.8rem;
+  margin: 23px 0px;
+  transform: translateY(-2.82rem);
+  text-align: center;
+}
+.shortpara {
+  margin: 23px 0px;
+  text-align: center;
+  transform: translateY(-2.82rem);
+}
+p {
+  font-size: 1.5rem;
+}
+.secondhalf button {
+  display: inline-block;
+  width: 12rem;
+  height: 2.6rem;
+  background: #d10441;
+  border: 2px solid rgb(10, 231, 194);
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transform: translateY(-2.82rem);
+}
+.firsthalf h1 {
+  font-size: 3.6rem;
+  color: black;
+  transform: translateY(-70px);
+  text-align: center;
+  margin-bottom: 13px;
+}
+input {
+  display: block;
+  width: 28rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  padding: 0px 15px;
+  border: none;
+  background-color: rgba(26, 24, 24, 0.3);
+  transform: translateY(-70px);
+  margin-bottom: 13px;
+}
+.icons {
+  transform: translateY(-70px);
+  margin-bottom: 13px;
+}
+#signin {
+  width: 14rem;
+  height: 2.6rem;
+  display: inline-block;
+  background-color: #28b498;
+  border: none;
+  border-radius: 50px;
+  transform: translateY(-70px);
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+#signup {
+  display: none;
+}
+img {
+  margin: 8px;
+}
+
+@media screen and (max-width: 790px) {
+  .divideintwo {
+    flex-direction: column;
+  }
+  .firsthalf {
+    width: 100vw;
+    height: 95%;
+  }
+  .secondhalf {
+    display: none;
+  }
+  .firsthalf h1 {
+    font-size: 2.9rem;
+  }
+  #signin {
+    width: 8rem;
+  }
+  input {
+    width: 20rem;
+  }
+  #signup {
+    width: 8rem;
+    height: 2.6rem;
+    display: inline-block;
+    background-color: #d10441;
+    border: none;
+    border-radius: 50px;
+    transform: translateY(-70px);
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .mediaquery {
+    width: 100vw;
+    height: 5%;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #0bccac 74%);
+  }
+}
+@media only screen and (max-width: 350px) {
+  .firsthalf h1 {
+    font-size: 2.1rem;
+  }
+  #signin,
+  #signup {
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+  input {
+    width: 15.5rem;
+  }
+}
